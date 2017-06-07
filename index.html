@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!--Page1-->
+        <div data-role="page" id="page1" data-theme="b">
+            <div data-role="header">
+
+            </div>
+
+            <div role="main" class="ui-content">
+                <!--title-->
+                <div class="header">
+                    <h1>Speed Reader</h1>
+
+                </div>
+                <div id="settings">
+                    <p>Text settings</p> 
+                </div>
+                <!--    Sliders    -->
+                <div id="controls">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <div>
+                                Font-Size:
+                            </div>
+                            <div>
+                                <form>
+
+                                    <input  type="range" name="fontslider" id="fontslider" min="20" max="100" value="50" step="5">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="ui-block-b">
+                            <div>
+                                Words per minute
+                            </div>
+                            <div>
+                                <form>
+
+                                    <input type="range" name="speedslider" id="speedslider" min="50" max="600" value="300" step="50">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Error Message -->
+                <div id="error">
+                    Please input text.
+                </div>
+                <!--Result-->
+                <div id="result">
+                    Word
+                </div>
+
+                <!-- User Input -->
+                <div id="input">
+                    <textarea id="userinput" placeholder="Enter text here..."></textarea>
+                </div>
+
+                <!-- buttons -->
+                <button id="start" class="ui-btn ui-corner-all">Start Reading</button>
+                <button id="new" class="ui-btn ui-corner-all">New</button>
+                <button id="pause" class="ui-btn ui-corner-all">Pause</button>
+                <button id="resume" class="ui-btn ui-corner-all">Resume</button>
+
+            </div>
+            <!--footer-->
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" data-transition="pop" data-icon="home" class="ui-btn-active ui-state-persist" >Home</a></li>
+                        <li><a href="#page2" data-transition="pop" data-icon="info" >About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div><!--Page1-->
+
+
+        <!--Page2-->
+        <div data-role="page" id="page2" data-theme="b">
+            <div data-role="header">
+
+            </div>
+
+            <div role="main" class="ui-content abouttext">
+                <p>This is an application that reads text at customized speed.</p>
+
+                <div data-role="footer" data-position="fixed">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#page1" data-transition="pop" data-icon="home">Home</a></li>
+                            <li><a href="#page2" data-transition="pop" data-icon="info"  class="ui-btn-active ui-state-persist" >About</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div><!--Page2-->
+
+
+
+        <script
+                src="jquery.js">
+        </script>   
+    </body>
+</html>

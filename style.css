@@ -1,0 +1,47 @@
+#page1{
+    background: url(back.jpg);
+    background-position:  center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /*    background: darkgrey;*/
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+}
+
+
+
+.header{
+    background-color: rgba(255, 255, 255, 0.51);
+    color: dimgray;
+}
+
+#error{
+    background: rgba(234, 98, 48, 0.66);
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#result{
+    font-size: 50px;
+    background-color: rgba(117, 112, 112, 0.51);
+    padding: 2.5% 0;
+
+}
+
+#settings > p:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.abouttext{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px
+}
